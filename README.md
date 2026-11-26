@@ -278,4 +278,19 @@ npm install
 
 ---
 
+### Environment Variables
+
+Lifeloop currently does not require a separate `.env` file or environment variables for local frontend setup.
+
+Firebase configuration and the reCAPTCHA v3 site key are configured directly in `script.js`.
+
+For local development:
+- Firebase App Check Debug Token is enabled on localhost.
+- Firestore Emulator runs on port 8080.
+- Firebase Functions Emulator runs on port 5001.
+
+Users must configure their own Firebase project credentials and register their local App Check debug token when setting up their own environment.
+
+No private service account credentials or Firebase Admin SDK secrets should be committed to the public repository.
+
 **Lifeloop – Connecting blood donors with those in need.**

@@ -1,0 +1,314 @@
+
+/* =================================
+   1. BASIC WEBSITE SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f7;
+    color: #333333;
+    min-height: 100vh;
+}
+
+
+/* =================================
+   2. WEBSITE HEADER
+================================= */
+
+header {
+    background-color: #ffffff;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffe0dc;
+}
+
+header h1 {
+    color: #c62828;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header p {
+    color: #777777;
+    font-size: 14px;
+}
+
+
+/* =================================
+   3. MAIN WELCOME SECTION
+================================= */
+
+.welcome-section {
+    text-align: center;
+    padding: 80px 8% 70px;
+}
+
+.welcome-section > h2 {
+    color: #b71c1c;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.welcome-section > p {
+    color: #666666;
+    font-size: 17px;
+    margin-bottom: 45px;
+}
+
+.welcome-section h3 {
+    color: #333333;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+
+/* =================================
+   4. DONOR AND RECEIVER CARDS
+================================= */
+
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.option-card {
+    background-color: #ffffff;
+    width: 50%;
+    padding: 40px 30px;
+    border-radius: 18px;
+    border: 1px solid #f5d5d1;
+    box-shadow: 0 5px 20px rgba(150, 30, 30, 0.08);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.option-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(150, 30, 30, 0.15);
+}
+
+.option-card h2 {
+    color: #b71c1c;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.option-card p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+
+/* =================================
+   5. BUTTON DESIGN
+================================= */
+
+.option-card button {
+    background-color: #d32f2f;
+    color: #ffffff;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.option-card button:hover {
+    background-color: #a71919;
+    transform: scale(1.04);
+}
+
+
+/* =================================
+   6. WEBSITE FOOTER
+================================= */
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 22px;
+    border-top: 1px solid #ffe0dc;
+    color: #777777;
+    font-size: 14px;
+}
+
+
+/* =================================
+   7. MOBILE RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .welcome-section {
+        padding: 50px 6%;
+    }
+
+    .welcome-section > h2 {
+        font-size: 32px;
+    }
+
+    .options-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .option-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+}
+
+
+
+/* =================================
+   8. FORM DESIGN
+================================= */
+
+.hidden {
+    display: none;
+}
+
+.form-section {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 18px;
+    border: 1px solid #f5d5d1;
+    box-shadow: 0 5px 20px rgba(150, 30, 30, 0.08);
+}
+
+.form-section h2 {
+    color: #b71c1c;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.form-section > p {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-section label {
+    font-weight: bold;
+    color: #444444;
+}
+
+.form-section input,
+.form-section select {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    font-size: 15px;
+    width: 100%;
+    outline: none;
+}
+
+.form-section input:focus,
+.form-section select:focus {
+    border-color: #d32f2f;
+}
+
+.form-section button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-section button:hover {
+    background-color: #a71919;
+}
+
+@media (max-width: 650px) {
+    .form-section {
+        margin: 25px 6%;
+        padding: 25px;
+    }
+}
+
+
+
+/* =================================
+   9. DONOR SEARCH RESULT CARDS
+================================= */
+
+.search-results {
+    margin-top: 30px;
+}
+
+.search-results h3 {
+    color: #b71c1c;
+    margin-bottom: 15px;
+}
+
+#donorResults > p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.donor-card {
+    background-color: #fff8f7;
+    border: 1px solid #f0c9c5;
+    border-left: 5px solid #d32f2f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+    box-shadow: 0 3px 10px rgba(150, 30, 30, 0.06);
+}
+
+.donor-card h3 {
+    color: #b71c1c;
+    margin-bottom: 12px;
+}
+
+.donor-card p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+@media (max-width: 650px) {
+
+    .donor-card {
+        padding: 15px;
+    }
+
+}

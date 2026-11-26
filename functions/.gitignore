@@ -1,0 +1,13 @@
+node_modules/
+*.local
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Firebase credentials
+serviceAccountKey.json
+*-service-account*.json
+
+# Logs
+*.log
